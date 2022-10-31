@@ -1,32 +1,65 @@
 
 ---
 
-publiccodeYmlVersion: "0.1"
+publiccodeYmlVersion: 1.0
+softwareType: "standalone/web"
+developmentStatus: 'stable'
+releaseDate: '31/10/2022'
+
 name: "OpenCatalogiBundle"
+
 url: "https://github.com/OpenCatalogi/OpenCatalogiBundle"
+
 releaseDate: "2022-10-01"
+
 platforms:
   - "web"
+  
+inputTypes: 
+  - application/json
+  - application/ld+json
+  - application/hal+json
+
+outputTypes:
+  - application/json
+  - application/ld+json
+  - application/hal+json  
+  
 categories:
   - "collaboration"
   - "it-development"
   - "application-development"
+  
 roadmap: "https://github.com/orgs/OpenCatalogi/projects/1"
+
 softwareType: "softwareAddon"
+
 intendedAudience:
   scope: 
     - "government"
+    
 developmentStatus: "beta"
+
 description:
   nl:
+    localisedName: "OpenCatalogi applicatie"
     shortDescription: "OpenCatalogiBundle"
     longDescription: "De CommonGatway bundle voor Open Catalogi"
   en:
+    localisedName: "OpenCatalogi application"
     shortDescription: "OpenCatalogiBundle"
     longDescription: "The CommonGatway bundle for Open Catalogs"
+    
   documentation: "https://conduction.stoplight.io/docs/publiccode/x7yg9vhm1mt4z-public-code"
+  
 maintenance: 
   type: "internal"
+  
 nl:
   commonground: 
     layerType: "interface"
+
+dependsOn:
+  open:
+    - name: common-gateway
+      versionMin: 1.0.0
